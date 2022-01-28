@@ -19,11 +19,11 @@ function checkPermutationObj(str1, str2) {
   }
 
   for (let key in str1Obj) {
-    if (str1Obj[key > 0]) {
+    if (str1Obj[key] > 0) {
       return false;
     }
   }
   return true;
 }
 
-console.log(checkPermutationObj("abc", "aaaa"));
+console.log(checkPermutationObj("abbc", "abbc"));
